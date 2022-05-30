@@ -3,6 +3,7 @@ package team.participant;
 import team.participant.Participant;
 
 public class Cat implements Participant {
+    static boolean isPassed;
     private String name;
     private int maxRunDistance;
     private int maxJumpHeight;
@@ -21,6 +22,14 @@ public class Cat implements Participant {
         return maxJumpHeight;
     }
 
+    public boolean isPassed() {
+        return isPassed;
+    }
+
+    public static void setPassed(boolean passed) {
+        isPassed = passed;
+    }
+
     @Override
     public void run() {
         System.out.println(name + " running...");
@@ -29,5 +38,14 @@ public class Cat implements Participant {
     @Override
     public void jump() {
         System.out.println(name + " jumping");
+    }
+
+    @Override
+    public String toString() {
+        return "Cat{" +
+                "name='" + name + '\'' +
+                ", maxRunDistance=" + maxRunDistance +
+                ", maxJumpHeight=" + maxJumpHeight +
+                '}';
     }
 }

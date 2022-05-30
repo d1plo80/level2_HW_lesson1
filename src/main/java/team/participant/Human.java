@@ -32,4 +32,12 @@ public class Human implements Participant {
         System.out.println(name + " jumping");
     }
 
+    @Override
+    public String toString() {
+        return "Human{" +
+                "name='" + name + '\'' +
+                ", maxRunDistance=" + maxRunDistance +
+                ", maxJumpHeight=" + maxJumpHeight +
+                '}';
+    }
 }
