@@ -30,4 +30,13 @@ public class Robot implements Participant {
     public void jump() {
         System.out.println(name + " jumping");
     }
+
+    @Override
+    public String toString() {
+        return "Robot{" +
+                "name='" + name + '\'' +
+                ", maxRunDistance=" + maxRunDistance +
+                ", maxJumpHeight=" + maxJumpHeight +
+                '}';
+    }
 }

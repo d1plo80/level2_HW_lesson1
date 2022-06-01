@@ -1,5 +1,7 @@
 package course;
 
+import team.Team;
+
 public interface Course {
-    void doIt();
+    void doIt(Team team);
 }
